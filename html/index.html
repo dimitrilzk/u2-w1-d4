@@ -12,16 +12,18 @@
       <div class="input-button">
         <button>MAIUSCOLO</button>
         <button>GRASSETTO</button>
-        <input type="text" placeholder="--->>>Inserisci un testo qualsiasi<<<---" />
+        <input
+          id="input-item"
+          onkeydown="getInputAndAddItem(event)"
+          type="text"
+          placeholder="--->>>Inserisci un testo qualsiasi<<<---"
+        />
         <button class="invio">Invio</button>
       </div>
-      <div id="frasi">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div id="items">
+        <div class="item" onclick="selectItem(event)">
+          Primo elemento della lista: Studia Javascript
+        </div>
       </div>
     </div>
     <script src="../script/script.js"></script>

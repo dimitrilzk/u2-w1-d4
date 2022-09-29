@@ -9,21 +9,22 @@
   </head>
   <body>
     <div id="container">
+      <div>
+        <button onclick="maiuscolo(event)">MAIUSCOLO</button>
+        <button onclick="grassetto(event)">GRASSETTO</button>
+        <button onclick="sottolinea(event)">SOTTOLINEATO</button>
+      </div>
       <div class="input-button">
-        <button>MAIUSCOLO</button>
-        <button>GRASSETTO</button>
         <input
           id="input-item"
           onkeydown="getInputAndAddItem(event)"
           type="text"
           placeholder="--->>>Inserisci un testo qualsiasi<<<---"
         />
-        <button class="invio">Invio</button>
+        <button class="invio" onclick="invio(event)">Invio</button>
       </div>
       <div id="items">
-        <div class="item" onclick="selectItem(event)">
-          Primo elemento della lista: Studia Javascript
-        </div>
+        <div class="item">Primo elemento della lista: Studia Javascript</div>
       </div>
     </div>
     <script src="../script/script.js"></script>

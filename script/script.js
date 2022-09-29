@@ -54,3 +54,18 @@ function sottolinea() {
     alert("Il campo di testo è vuoto!");
   }
 }
+
+function rosso() {
+  let up = document.getElementById("input-item");
+  let input = document.getElementById("input-item");
+  if (up.value !== "") {
+    items.innerHTML += `<div class="item red">${input.value}</div>`;
+    input.value = "";
+  } else {
+    alert("Il campo di testo è vuoto!");
+  }
+}
+function cancella() {
+  let input = document.getElementById("input-item");
+  input.value = "";
+}

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.input-button {
+    margin-top: 100px;
+    text-align: center;
+}
+.input-button input {
+    width: 700px;
+    height: 75px;
+    border: 5px solid red;
+    background-color: wheat;
+    font-size: 25px;
+}
+.input-button input::placeholder {
+    font-size: 25px;
+    text-align: center;
+}
+.input-button .invio {
+    width: 150px;
+    height: 50px;
+    border: 2px solid green;
+    background-color: chartreuse;
+    font-size: 25px;
+}
+#frasi div {
+    width: 700px;
+    height: 50px;
+    border: 3px solid gray;
+    margin-inline: 385px;
+    margin-block: 30px;
+}
